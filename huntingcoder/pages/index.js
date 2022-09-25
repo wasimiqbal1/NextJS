@@ -12,7 +12,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <script src='/sc.js' strategy='lazyOnoad'></script>
+      <Script src='/sc.js' strategy='lazyOnoad'>
+
+      </Script>
       <main className={styles.main}>
         <h1 className={styles.title}>
           Hunting Coder
