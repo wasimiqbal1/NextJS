@@ -1,5 +1,5 @@
     export default function Home() {
             return (
-                    <div>Hello World</div>
+                    <div>Hello World Deployment with GIT Integration & Vercel</div>
             )
     }
