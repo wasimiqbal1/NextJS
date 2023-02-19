@@ -12,8 +12,21 @@ import checkMarkIcon from "./Icons/checkMarkIcon";
 
 export default function Pricing() {
   return (
-    <Box>
-      <Flex>
+    <Box
+      maxW="950px"
+      mx={{ base: "20px", lg: "auto" }}
+      //   ml={{ base: "20px", lg: "auto" }}
+      //   mr={{ base: "20px", lg: "auto" }}
+      mt="-150px"
+      //   mx="20px"
+      bg="white"
+      borderRadius={"16px"}
+      overflow="hidden"
+      boxShadow={
+        " 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);"
+      }
+    >
+      <Flex direction={{ base: "column", md: "column", lg: "row" }}>
         <Box bg="#cbb8ee" p="60px" textAlign={"center"}>
           <text fontSize={"24px"} fontWeight={"bold"}>
             Premium PRO
@@ -28,7 +41,8 @@ export default function Pricing() {
         </Box>
         <Box pt="50px" pl="25px" pr="10px">
           <Text mb="10px">
-             Access these futures when you get this pricing package for your business.
+            Access these futures when you get this pricing package for your
+            business.
           </Text>
           <HStack mb={"15px"}>
             <Icon as={checkMarkIcon} />
