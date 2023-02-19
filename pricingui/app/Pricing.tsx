@@ -1,5 +1,14 @@
-import { Box, Flex, Heading, Button, HStack } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  Button,
+  HStack,
+  Icon,
+  Text,
+} from "@chakra-ui/react";
 import React from "react";
+import checkMarkIcon from "./Icons/checkMarkIcon";
 
 export default function Pricing() {
   return (
@@ -17,16 +26,26 @@ export default function Pricing() {
             </Button>
           </div>
         </Box>
-        <Box pt={"50px"} pl={"25px"}>
-          <text>
-            Access these futures when you get this pricing package for your
-            business.
-          </text>
-          <HStack>
-            <text>
-                International Calling and messageing API 
-            </text>
+        <Box pt="50px" pl="25px" pr="10px">
+          <Text mb="10px">
+             Access these futures when you get this pricing package for your business.
+          </Text>
+          <HStack mb={"15px"}>
+            <Icon as={checkMarkIcon} />
+            <Text>International calling and messaging API</Text>
           </HStack>
+          <HStack mb={"15px"}>
+            <Icon as={checkMarkIcon} />
+            <Text>Additional phone numbers</Text>
+          </HStack>
+          <HStack mb={"15px"}>
+            <Icon as={checkMarkIcon} />
+            <Text>Automated messages via Zapier</Text>
+          </HStack>
+          <HStack mb={"15px"}>
+            <Icon as={checkMarkIcon} />
+            <Text>24/7 support and consulting</Text>
+          </HStack>{" "}
         </Box>
       </Flex>
     </Box>
