@@ -5,6 +5,7 @@ import Pricing from "./Pricing";
 // import { Inter } from '@next/font/google'
 // import styles from './page.module.css'
 import { ChakraProvider } from '@chakra-ui/react'
+import Features from "./Features";
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
   <ChakraProvider>
     <Header/>
     <Pricing/>
+    <Features/>
     </ChakraProvider>
 
   )
